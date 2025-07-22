@@ -1,0 +1,30 @@
+<!-- Barra del título -->
+<div class="title-bar">
+  <h2>{{ 'base.title' | translate }}</h2>
+</div>
+
+<!-- Barra de tabs -->
+<div class="tabs-bar">
+  <button mat-button
+    [class.active]="selectedTab === 'occupation'"
+    (click)="selectTab('occupation')">
+    {{ 'tabs.occupations' | translate }}
+  </button>
+
+  <button mat-button
+    [class.active]="selectedTab === 'country'"
+    (click)="selectTab('country')">
+    {{ 'tabs.countries' | translate }}
+  </button>
+
+  <button mat-button
+    [class.active]="selectedTab === 'id'"
+    (click)="selectTab('id')">
+    {{ 'tabs.ids' | translate }}
+  </button>
+</div>
+
+<!-- Aquí se cargará el contenido del tab seleccionado -->
+<div class="tab-content">
+  <!-- contenido dinámico en siguientes tareas -->
+</div>

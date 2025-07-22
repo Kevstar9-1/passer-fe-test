@@ -1,3 +1,10 @@
 {
-  
+    "base": {
+        "title": "CATÁLOGO DE RIESGOS"
+    },
+    "tabs": {
+        "occupations": "OCUPACIONES",
+        "countries": "PAÍSES",
+        "ids": "IDENTIFICACIONES"
+    }
 }
