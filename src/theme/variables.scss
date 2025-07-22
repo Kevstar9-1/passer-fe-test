@@ -1,0 +1,279 @@
+
+/*
+  Variables
+*/
+$app-aside-nav-head-bg: #ECECFB;
+$border-radius-base: 5px;
+$btn-default-bg: #F7F7FD;
+$btn-default-border: #E6E6E6;
+$danger: #f05050;
+$dark: #333333;
+$equis: #FF3F45;
+$font-color-primary: #FFF;
+$link-color: darken(#404051, 15%);
+$light: #DDDDDD;
+$primary: #9C64C0;
+$primary-light-20: #caaddd;
+$primary-background: #FAFAFA;
+$secondary: #007FFF;
+$sombra: #CACAD9;
+$success: #85B200;
+$text-subtitle: #9326FF;
+$primary-light: #DFCCEB;
+$warning: #fad733;
+
+:root {
+  --psr-alert-warning: #8a6d3b;
+  --psr-app-aside-nav-head-bg: #ECECFB;
+  --psr-background-cell: #CEE9FA;
+  --psr-background-empty: #EAEAF0;
+  --psr-background-material: rgba(0,0,0,.04);
+  --psr-background-material-disabled: rgba(0,0,0,.02);
+  --psr-color-material-disabled: rgba(0,0,0,.38);
+  --psr-background-opacity: rgba(0,0,0,.32);
+  --psr-backgroung-warning: #fcf8e3;
+  --psr-bbb: #bbb;
+  --psr-border-warning: #faebcc;
+  --psr-box-value: #E9F2F8;
+  --psr-btn: #6772E5;
+  --psr-btn-tab: #6200EE0A;
+  --psr-camera-opac: #B8B8C7;
+  --psr-ccc: #CCC;
+  --psr-checkbox-border: #D8D8D8;
+  --psr-check-view: #609ED6;
+  --psr-cyan-dark: #14A7C2;
+  --psr-cyan-variation: #35e0ff;
+  --psr-danger: #f05050;
+  --psr-danger-variation: #BD3232;
+  --psr-dark: #333333;
+  --psr-disabled-color: #B9B9C8;
+  --psr-diabled-icon-input: rgba(0,0,0,.26);
+  --psr-empty: #9595A2;
+  --psr-equis: #FF3F45;
+  --psr-font-color-primary: #FFF;
+  --psr-font-success: #F7FFF7;
+  --psr-input-border: #DBDBEA;
+  --psr-input-border-29: #DBDBEA29;
+  --psr-input-border-70: #DBDBEA70;
+  --psr-input-group-hover: #F9F8F8;
+  --psr-light: #DDDDDD;
+  --psr-light-gray: #F3F2F3;
+  --psr-light-green: #85F37D;
+  --psr-mesage: #74E4A2;
+  --psr-naranja: #FF3F00;
+  --psr-suspended: #F38D7D;
+  --psr-suspended-box: #F3C6B7;
+  --psr-placeholder-color: #1F1F1F;
+  --psr-positiveText: #149470;
+  --psr-primary: #9C64C0;
+  --psr-primary-light-20: #caaddd;
+  --psr-primary-background: #FAFAFA;
+  --psr-primary-light: #DFCCEB;
+  --psr-progress-bar-green: #03D117;
+  --psr-purp: #8C5F98;
+  --psr-purpD: #5F4797;
+  --psr-radio-button-border: #DEDEDE;
+  --psr-radio-button-bg: #604897;
+  --psr-radio-button-bg-87: #604897DE;
+  --psr-rating: #A9A9A9;
+  --psr-sec-back-dark: #F1F5F9;
+  --psr-secondary: #007FFF;
+  --psr-secondary-dark-20: #004c99;
+  --psr-secondary-background: #F8FAFC;
+  --psr-selected-seat: #8C95EF;
+  --psr-snd-background-hover: #D8EBFF;
+  --psr-shadow-box: #DBDBEA70;
+  --psr-sombra: #CACAD9;
+  --psr-star-yellow: #E0E03C;
+  --psr-success:#85B200;
+  --psr-text-green: #139370; // Otro verde
+  --psr-text-link-pur: #5D3F6C;
+  --psr-text-modal-succ: #139270; // Verde success
+  --psr-text-muted: #EFEFEF;
+  --psr-text-subtitle: #9326FF;
+  --psr-text-title-modal:#217ab7;
+  --psr-text-color: #404051;
+  --psr-text-color-55: #555;
+  --psr-text-color-13: #40405126;
+  --psr-toggle-bg: #F0F0F0;
+  --psr-yellow: #F3EA7D;
+  --psr-warning: #fad733;
+  --psr-whatsapp-green: #44BE53;
+
+  --psr-btn-bg-lightblue: #DCEEFC;
+  --psr-btn-blue: #1C3992;
+  --psr-light-purple: #C0A8F7;
+  --psr-lighter-purple: #E6D5FF;
+  --psr-purple-opaque: #7F6CAB;
+  --psr-gray-row: #F2F2F3;
+}
+
+.white{ color: white !important; }
+.color-psr-alert-warning{ color: var(--psr-alert-warning) !important; }
+.color-psr-app-aside-nav-head-bg{ color: var(--psr-app-aside-nav-head-bg) !important; }
+.color-psr-background-cell{ color: var(--psr-background-cell) !important; }
+.color-psr-background-empty{ color: var(--psr-background-empty) !important; }
+.color-psr-background-material{ color: var(--psr-background-material) !important; }
+.color-psr-backgroung-warning{ color: var(--psr-backgroung-warning) !important; }
+.color-psr-bbb{ color: var(--psr-bbb) !important; }
+.color-psr-border-warning{ color: var(--psr-border-warning) !important; }
+.color-psr-box-value{ color: var(--psr-box-value) !important; }
+.color-psr-btn{ color: var(--psr-btn) !important; }
+.color-psr-btn-bg-lightblue{ color: var(--psr-btn-bg-lightblue) !important; }
+.color-psr-btn-blue{ color: var(--psr-btn-blue) !important; }
+.color-psr-btn-tab{ color: var(--psr-btn-tab) !important; }
+.color-psr-ccc{ color: var(--psr-ccc) !important; }
+.color-psr-checkbox-border{ color: var(--psr-checkbox-border) !important; }
+.color-psr-check-view{ color: var(--psr-check-view) !important; }
+.color-psr-cyan-dark{ color: var(--psr-cyan-dark) !important; }
+.color-psr-cyan-variation{ color: var(--psr-cyan-variation) !important; }
+.color-psr-danger{ color: var(--psr-danger) !important; }
+.color-psr-danger-variation{ color: var(--psr-danger-variation) !important; }
+.color-psr-dark{ color: var(--psr-dark) !important; }
+.color-psr-disabled-color{ color: var(--psr-disabled-color) !important; }
+.color-psr-diabled-icon-input{ color: var(--psr-diabled-icon-input) !important; }
+.color-psr-empty{ color: var(--psr-empty) !important; }
+.color-psr-equis{ color: var(--psr-equis) !important; }
+.color-psr-font-color-primary{ color: var(--psr-font-color-primary) !important; }
+.color-psr-font-success{ color: var(--psr-font-success) !important; }
+.color-psr-input-border{ color: var(--psr-input-border) !important; }
+.color-psr-input-group-hover{ color: var(--psr-input-group-hover) !important; }
+.color-psr-light{ color: var(--psr-light) !important; }
+.color-psr-light-gray{ color: var(--psr-light-gray) !important; }
+.color-psr-light-green{ color: var(--psr-light-green) !important; }
+.color-psr-link-color{ color: $link-color !important; }
+.color-psr-material-disabled{ color: var(--psr-color-material-disabled) !important; }
+.color-psr-naranja{ color: var(--psr-naranja) !important; }
+.color-psr-suspended{ color: var(--psr-suspended) !important; }
+.color-psr-suspended-box{ color: var(--psr-suspended-box) !important; }
+.color-psr-mesage{ color: var(--psr-mesage) !important; }
+.color-psr-placeholder-color{ color: var(--psr-placeholder-color) !important; }
+.color-psr-positiveText{ color: var(--psr-positiveText) !important; }
+.color-psr-primary{ color: var(--psr-primary) !important; }
+.color-psr-primary-light-20{ color: var(--psr-primary-light-20) !important; }
+.color-psr-primary-background{ color: var(--psr-primary-background) !important; }
+.color-psr-primary-light{ color: var(--psr-primary-light) !important; }
+.color-psr-progress-bar-green{ color: var(--psr-progress-bar-green) !important; }
+.color-psr-purp{ color: var(--psr-purp) !important; }
+.color-psr-purpD{ color: var(--psr-purpD) !important; }
+.color-psr-radio-button-border{ color: var(--psr-radio-button-border) !important; }
+.color-psr-radio-button-bg{ color: var(--psr-radio-button-bg) !important; }
+.color-psr-radio-button-bg-87{ color: var(--psr-radio-button-bg-87) !important; }
+.color-psr-rating{ color: var(--psr-rating) !important; }
+.color-psr-sec-back-dark{ color: var(--psr-sec-back-dark) !important; }
+.color-psr-secondary{ color: var(--psr-secondary) !important; }
+.color-psr-secondary-dark-20{ color: var(--psr-secondary-dark-20) !important; }
+.color-psr-secondary-background{ color: var(--psr-secondary-background) !important; }
+.color-psr-selected-seat{ color: var(--psr-selected-seat) !important; }
+.color-psr-snd-background-hover{ color: var(--psr-snd-background-hover) !important; }
+.color-psr-sombra{ color: var(--psr-sombra) !important; }
+.color-psr-shadow-box { color: var(--psr-shadow-box) !important; }
+.color-psr-star-yellow{ color: var(--psr-star-yellow) !important; }
+.color-psr-success{ color: var(--psr-success) !important; }
+.color-psr-text-green{ color: var(--psr-text-green) !important; }
+.color-psr-text-link-pur{ color: var(--psr-text-link-pur) !important; }
+.color-psr-text-modal-succ{ color: var(--psr-text-modal-succ) !important; }
+.color-psr-text-muted{ color: var(--psr-text-muted) !important; }
+.color-psr-text-subtitle{ color: var(--psr-text-subtitle) !important; }
+.color-psr-text-title-modal{ color: var(--psr-text-title-modal) !important; }
+.color-psr-text-color{ color: var(--psr-text-color) !important; }
+.color-psr-text-color-55{ color: var(--psr-text-color-55) !important; }
+.color-psr-text-color-13{ color: var(--psr-text-color-13) !important; }
+.color-psr-yellow{ color: var(--psr-yellow) !important; }
+.color-psr-warning{ color: var(--psr-warning) !important; }
+.color-psr-whatsapp-green{ color: var(--psr-whatsapp-green) !important; }
+.color-psr-light-purple { color: var(--psr-light-purple) !important; }
+
+.background-input-border{ background-color: var(--psr-input-border) !important; }
+.background-app-aside-nav-head-bg{ background-color: var(--psr-app-aside-nav-head-bg) !important; }
+.background-camera-opac{ background-color: var(--psr-camera-opac) !important; }
+.background-ccc{ background-color: var(--psr-ccc) !important; }
+.background-bg-material{ background-color: var(--psr-background-material) !important; }
+.background-bg-material-dis{ background-color: var(--psr-background-material-disabled) !important; }
+.background-box-value{ background-color: var(--psr-box-value) !important; }
+.background-btn-bg-lightblue{ background-color: var(--psr-btn-bg-lightblue) !important; }
+.background-btn-tab{ background-color: var(--psr-btn-tab) !important; }
+.background-disabled-color{ background-color: var(--psr-disabled-color) !important; }
+.background-light-purple { background-color: var(--psr-light-purple) !important; }
+.background-lighter-purple { background-color: var(--psr-lighter-purple) !important; }
+.background-light-gray{ background-color: var(--psr-light-gray) !important; }
+.background-light-green{ background-color: var(--psr-light-green) !important; }
+.background-message{ background-color: var(--psr-mesage) !important; }
+.background-snd{ background-color: var(--psr-snd-background-hover) !important; }
+.background-sec-back-dark{ background-color: var(--psr-sec-back-dark) !important; }
+.background-secondary{ background-color: var(--psr-secondary-background) !important; }
+.background-selected-seat{ background-color: var(--psr-selected-seat) !important; }
+.background-suspended-box{ background-color: var(--psr-suspended-box) !important; }
+.background-empty{ background-color: var(--psr-background-empty) !important; }
+.background-toggle-bg{ background-color: var(--psr-toggle-bg) !important; }
+.background-star-yellow{ background-color: var(--psr-star-yellow) !important; }
+.background-yellow{ background-color: var(--psr-yellow) !important; }
+.background-whatsapp-green{ background-color: var(--psr-whatsapp-green) !important; }
+.background-white{ background-color: white !important; }
+.background-transparent{ background-color: transparent !important; }
+.background-warning{ background-color: var(--psr-backgroung-warning) !important; }
+
+// Screen Size
+$screen-xlg:  1600px;
+
+// Font
+
+$font-family-sans:                Arial,sans-serif,"Segoe UI","Roboto","Helvetica Neue"; // 'Helvetica Neue', Helvetica, Arial, sans-serif
+.font-family-sans{ font-family: $font-family-sans !important; }
+
+$font-size-base:                  16px;
+$font-size-lg:                    ceil($font-size-base * 1.23); // ~20px
+$font-size-md:                    ceil($font-size-base * 1.14); // ~16px
+$font-size-sm:                    ceil($font-size-base * 0.92); // ~13px
+$font-size-xs:                    ceil($font-size-base * 0.85); // ~12px
+
+// Inputs
+
+$input-size:                      35px;
+
+$switch-width:                    35px;
+$switch-height:                   20px;
+$switch-md-width:                 40px;
+$switch-md-height:                24px;
+$switch-lg-width:                 50px;
+$switch-lg-height:                30px;
+
+$app-aside-nav-size:              1rem;
+$app-aside-nav-width:             250px;
+
+$app-aside-width:                 200px;
+$app-aside-nav-height:            40px;
+$app-aside-folded-width:          100px;
+$app-aside-folded-nav-height:     50px;
+$app-aside-dock-media:            992px;
+
+$app-header-height:               50px;
+$app-header-md-height:            60px;
+
+$scroll-bar-width:                17px;
+$butterbar-height:                3px;
+$butterbar-time:                  0.75s;
+
+$off-screen-width:                75%;
+
+// Margin and padding
+
+$size-1:                          1px;
+$size-2:                          2px;
+$size-4:                          4px;
+$size-6:                          6px;
+$size-5:                          5px;
+$size-8:                          8px;
+$size-10:                         10px;
+$size-12:                         12px;
+$size-16:                         16px;
+$size-18:                         18px;
+$size-base:                       15px;
+$size-20:                         20px;
+$size-25:                         25px;
+$size-30:                         30px;
+$size-40:                         40px;
+$size-45:                         45px;
+$size-50:                         50px;
+$size-80:                         80px;
+$size-100:                        100px;

@@ -1,0 +1,5 @@
+<div [className]="'background-white shadow-box radius-base p-16 ' + classDiv">
+  <h4 *ngIf="title" [className]="titleClass" [innerHTML]="title"></h4>
+  <p  *ngIf="desc" [className]="descClass" [innerHTML]="desc"></p>
+  <ng-content></ng-content>
+</div>

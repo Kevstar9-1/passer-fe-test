@@ -1,0 +1,180 @@
+
+.btn{
+  font-weight: 500;
+  font-size: 0.8125em;
+  border-radius: $border-radius-base;
+  outline: 0 !important;
+}
+
+
+.btn-light-gradient{
+  background-image: linear-gradient(to bottom,#FFFFFF,$app-aside-nav-head-bg)!important;
+  border: 1px solid var(--psr-light);
+  color: var(--psr-dark);
+  font-family: $font-family-sans;
+  font-size: 0.8125rem;
+  &:hover{
+    border: 1px solid var(--psr-font-color-primary);
+    box-shadow: inset 0 1px 1px rgba(255,255,255, 1), 0 0 8px rgba(142, 46, 180, 1);
+  }
+}
+
+.btn-delete{
+  background-image: linear-gradient(to bottom,#FFFFFF,$app-aside-nav-head-bg) !important;
+  border: 1px solid var(--psr-light);
+  color: var(--psr-dark);
+  font-family: $font-family-sans;
+  font-size: 0.8125rem;
+  &:hover{
+    border: 1px solid var(--psr-font-color-primary);
+    box-shadow: inset 0 1px 1px rgba(255,255,255, 1), 0 0 8px rgb(255, 63, 69, 1);
+    color: rgba(255, 63, 69, 1);
+  }
+}
+
+.close-btn{
+  background-color: transparent;
+  border: 0px;
+  color: var(--psr-equis);
+  font-size: 1.5em;
+  padding: 10px;
+}
+
+.btn-square-40{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--psr-font-color-primary);
+  border: 1px solid var(--psr-input-border);
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  color: var(--psr-text-color);
+}
+
+.btn-default-header{ color: var(--psr-text-color); box-shadow: 2px 2px 2px var(--psr-input-border); }
+
+.btn-select{
+  color: var(--psr-disabled-color);
+  width: 200px;
+  text-align: left;
+  span{
+    float: right;
+    text-align: right;
+    margin: 4px;
+  }
+}
+
+.btn-select2{
+  color: var(--psr-disabled-color);
+  width: 271px;
+  text-align: left;
+  span{
+    float: right;
+    text-align: right;
+    margin: 4px;
+  }
+  span:before{ content: ""; }
+}
+
+.btn-select3{
+  color: var(--psr-disabled-color);
+  width: 100%;
+  height: 100% !important;
+  text-align: left;
+  span{
+    float: right;
+    text-align: right;
+    margin: 4px;
+  }
+  span:before{ content: ""; }
+}
+
+.btn-tab{
+  background-color: var(--psr-btn-tab);
+  color: var(--psr-radio-button-bg);
+  text-transform: uppercase;
+  height: 35px;
+}
+
+.btn-cargar, .btn-guardar, .btn-cancelar, .btn-cancel, .btn-lightblue{
+  width: 104px;
+  height: 35px;
+  border-radius: $border-radius-base;
+  color: white;
+  border: none;
+  .focus, &:focus, &:hover{ color: white; }
+}
+
+.btn-cargar{
+  background-color: var(--psr-radio-button-bg);
+  &:disabled{
+    background: var(--psr-light);
+    color: var(--psr-disabled-color);
+  }
+}
+
+.btn-guardar{
+  background-image: linear-gradient(to bottom,#5EB7EA, #008CDD) !important;
+  border: 1px solid #006DD9;
+}
+
+.btn-cancelar{
+  color: var(--psr-text-color);
+  background-image: linear-gradient(to bottom,#FFFFFF,$app-aside-nav-head-bg) !important;
+  border: 1px solid var(--psr-input-border);
+  .focus, &:focus, &:hover{ color: var(--psr-text-color); }
+}
+
+.btn-cancel{
+  color: var(--psr-text-color);
+  background-color: var(--psr-light) !important;
+  .focus, &:focus, &:hover{ color: var(--psr-text-color); }
+}
+
+.btn-lightblue{
+  background-color: var(--psr-btn-bg-lightblue);
+  color: var(--psr-btn-blue);
+}
+
+.btn-retirar{
+  background-color: var(--psr-naranja);
+  color: white;
+  width: 104px;
+}
+
+.btn-habilitar{ color: var(--psr-mesage); border-color: var(--psr-mesage); }
+.btn-inhabilitar{ color: var(--psr-naranja); border-color: var(--psr-naranja); }
+
+.btn-prim{
+  color: var(--psr-radio-button-bg);
+  background-color: white;
+  border: 1px solid var(--psr-radio-button-bg);
+}
+
+.btn-blue{
+  background: var(--psr-btn);
+  background-image: none !important;
+  color: white;
+  width: 160px;
+  height: 38px;
+}
+
+.btn-blue-dark{
+  background: var(--psr-text-title-modal) !important;
+  color: white;
+}
+
+.daterangepicker {
+  .ranges .range_inputs .btn{ font-size: 1.0833em; }
+}
+
+.button-menu-copny{
+  .mat-button-focus-overlay{ background-color: transparent; }
+}
+
+.btn-newD {
+  height: 45px;
+  width: 150px;
+  text-transform: uppercase;
+}

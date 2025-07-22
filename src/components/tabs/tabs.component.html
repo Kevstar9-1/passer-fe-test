@@ -1,0 +1,11 @@
+
+<div class="filter-item text-left">
+  <button 
+    *ngFor="let item of list; let i = index"
+    class="btn btn-tab m-t-8 p-y-0 n-border pointer"
+    [ngClass]="{'btn-cargar background-light-purple': currentTab === item.action, 'm-r-8': i < list.length-1 }"
+    (click)="changeLink(item.action)"
+  >
+    {{ item.name | translate }}
+  </button>
+</div>
