@@ -24,7 +24,7 @@
   </button>
 </div>
 
-<!-- Aquí se cargará el contenido del tab seleccionado -->
+<!-- Contenido del tab seleccionado -->
 <div class="tab-content">
-  <!-- contenido dinámico en siguientes tareas -->
+  <app-occupation *ngIf="selectedTab === 'occupation'"></app-occupation>
 </div>

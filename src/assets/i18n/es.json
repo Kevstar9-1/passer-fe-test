@@ -1,10 +1,14 @@
 {
-    "base": {
-        "title": "CATÁLOGO DE RIESGOS"
-    },
-    "tabs": {
-        "occupations": "OCUPACIONES",
-        "countries": "PAÍSES",
-        "ids": "IDENTIFICACIONES"
-    }
+  "base": {
+    "title": "CATÁLOGO DE RIESGOS"
+  },
+  "tabs": {
+    "occupations": "OCUPACIONES",
+    "countries": "PAÍSES",
+    "ids": "IDENTIFICACIONES"
+  },
+  "occupation": {
+    "search": "Buscar",
+    "placeholder": "Ocupaciones"
+  }
 }

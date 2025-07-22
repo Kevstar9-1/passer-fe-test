@@ -11,6 +11,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 
 import { BaseComponent } from './pages/base/base.component';
+import { OccupationComponent } from './pages/base/occupation/occupation.component';
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -19,7 +20,8 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
 @NgModule({
   declarations: [
     AppComponent,
-    BaseComponent
+    BaseComponent,
+    OccupationComponent
   ],
   imports: [
     BrowserModule,

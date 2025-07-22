@@ -1,0 +1,54 @@
+mat-card {
+    margin-top: 16px;
+    padding: 16px;
+    border-radius: 5px;
+    background: #ffffff;
+    box-shadow: 0px 3px 6px #dddddd;
+    min-height: 104px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #404051;
+    margin-bottom: 12px;
+}
+
+.occupation-select {
+    width: 190px;
+
+    .mat-form-field-wrapper {
+        background-color: rgba(249, 248, 251, 0.2);
+        border-radius: 4px 4px 0 0;
+        height: 45px;
+        padding: 0;
+        opacity: 1;
+    }
+
+    .mat-form-field-flex {
+        padding: 0 13px;
+        height: 100%;
+        align-items: center;
+        color: #757575;
+    }
+
+    .mat-select-value-text {
+        color: #757575;
+        font-size: 12px; 
+        font-weight: 400; 
+        color: #4b4b4b;
+
+    }
+
+    .mat-select-arrow {
+        color: #757575;
+    }
+
+    .mat-form-field-underline,
+    .mat-form-field-outline {
+        display: none;
+    }
+}
