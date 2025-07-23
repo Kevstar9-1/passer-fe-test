@@ -8,9 +8,10 @@ import { environment } from 'src/environments/environment';
 })
 export class CatalogsConnections {
   private readonly GET_OCUPATIONS = '/occupations';
+  private readonly GET_COUNTRIES = '/countries';
   private urlCatalogs = environment.serverUrlCatalogs;
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
   async getOccupations(): Promise<any[]> {
     const response$ = this.http.get<any>(
@@ -19,4 +20,13 @@ export class CatalogsConnections {
     const result = await lastValueFrom(response$);
     return result?.data ?? [];
   }
+
+  async getCountries(): Promise<any[]> {
+    const response$ = this.http.get<{ success: boolean; data: any[] }>(
+      this.urlCatalogs + this.GET_COUNTRIES
+    );
+    const res = await lastValueFrom(response$);
+    return res.data;
+  }
+
 }

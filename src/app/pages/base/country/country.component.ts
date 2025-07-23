@@ -1,30 +1,31 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { MatTableDataSource } from '@angular/material/table';
+import { CatalogsConnections } from 'src/endpoints/catalogs.connections'; 
 
 @Component({
   selector: 'app-country',
   templateUrl: './country.component.html',
   styleUrls: ['./country.component.scss']
 })
-export class CountryComponent {
+export class CountryComponent implements OnInit {
   displayedColumns: string[] = ['name', 'sugef', 'risk'];
-  dataSource = new MatTableDataSource([
-    { name: 'Costa Rica', sugef: 5, risk: 2 },
-    { name: 'Afganistán', sugef: 1, risk: 3 },
-    { name: 'Estados Unidos', sugef: 10, risk: 1 }
-  ]);
-
+  dataSource = new MatTableDataSource<any>([]);
   selectedRow: any = null;
   countryFilter = new FormControl('');
 
-  constructor() {
+  constructor(private catalogs: CatalogsConnections) {
     this.dataSource.filterPredicate = (data, filter: string) =>
       data.name.toLowerCase().includes(filter.trim().toLowerCase());
 
     this.countryFilter.valueChanges.subscribe(value => {
       this.applyFilter(value ?? '');
     });
+  }
+
+  async ngOnInit(): Promise<void> {
+    const countries = await this.catalogs.getCountries(); 
+    this.dataSource.data = countries;
   }
 
   selectRow(row: any): void {
