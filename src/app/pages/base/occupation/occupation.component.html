@@ -1,13 +1,9 @@
-<mat-card>
-  <mat-card-content>
-    <h3>{{ 'occupation.search' | translate }}</h3>
-
-    <mat-form-field appearance="fill" class="occupation-select">
-      <mat-label>{{ 'occupation.placeholder' | translate }}</mat-label>
-      <mat-select>
-        <mat-option value="">Ocupación 1</mat-option>
-        <mat-option value="2">Ocupación 2</mat-option>
-      </mat-select>
-    </mat-form-field>
-  </mat-card-content>
-</mat-card>
+<mat-form-field appearance="fill">
+  <mat-label>Ocupación</mat-label>
+  <input type="text" matInput [formControl]="occupationControl" [matAutocomplete]="auto">
+  <mat-autocomplete #auto="matAutocomplete">
+    <mat-option *ngFor="let occupation of filteredOccupations$ | async" [value]="occupation.name">
+      {{ occupation.name }}
+    </mat-option>
+  </mat-autocomplete>
+</mat-form-field>

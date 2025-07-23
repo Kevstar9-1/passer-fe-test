@@ -1,29 +1,22 @@
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import { lastValueFrom } from 'rxjs';
 import { environment } from 'src/environments/environment';
 
 @Injectable({
-    providedIn: 'root',
+  providedIn: 'root',
 })
-export class GeneralMethodsService {
-  
-  private urlCatalogs: string = '';
-  // EXTENTIONS
-  private readonly GET_COUNTRIES = '/countries';
-  private readonly GET_TYPE_ID = '/identificationTypes';
+export class CatalogsConnections {
   private readonly GET_OCUPATIONS = '/occupations';
+  private urlCatalogs = environment.serverUrlCatalogs;
 
-  constructor(private http: HttpClient) {
-    this.urlCatalogs = environment.serverUrlCatalogs;
+  constructor(private http: HttpClient) {}
+
+  async getOccupations(): Promise<any[]> {
+    const response$ = this.http.get<any>(
+      `${this.urlCatalogs}${this.GET_OCUPATIONS}`
+    );
+    const result = await lastValueFrom(response$);
+    return result?.data ?? [];
   }
-
-  // EXAMPLE
-//   async methodExample(): Promise<typeResponse> {
-//     const response$ = this.http.get<typeResponse>(
-//       this.urlCatalogs + this.extention,
-//     );
-
-//     return await lastValueFrom(response$);
-//   }
 }
