@@ -9,6 +9,7 @@ import { environment } from 'src/environments/environment';
 export class CatalogsConnections {
   private readonly GET_OCUPATIONS = '/occupations';
   private readonly GET_COUNTRIES = '/countries';
+  private readonly GET_TYPE_ID = '/identificationTypes';
   private urlCatalogs = environment.serverUrlCatalogs;
 
   constructor(private http: HttpClient) { }
@@ -28,5 +29,11 @@ export class CatalogsConnections {
     const res = await lastValueFrom(response$);
     return res.data;
   }
+  async getIdentificationTypes(): Promise<any[]> {
+    const response$ = this.http.get<any>(`${this.urlCatalogs}${this.GET_TYPE_ID}`);
+    const result = await lastValueFrom(response$);
+    return result?.data ?? [];
+  }
+
 
 }

@@ -4,8 +4,8 @@
 
     <mat-form-field class="identification-display" appearance="fill">
       <mat-select [formControl]="identificationControl" placeholder="Identificación">
-        <mat-option *ngFor="let id of identifications" [value]="id">
-          {{ id }}
+        <mat-option *ngFor="let type of identificationTypes" [value]="type.id">
+          {{ type.name }}
         </mat-option>
       </mat-select>
     </mat-form-field>
