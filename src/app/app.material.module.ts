@@ -11,6 +11,8 @@ import {MatMenuModule} from '@angular/material/menu';
 import {ReactiveFormsModule, FormsModule} from '@angular/forms';
 import {CommonModule} from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
+import { MatTableModule } from '@angular/material/table';
+
 
 @NgModule({
   imports: [
@@ -18,14 +20,14 @@ import { MatCardModule } from '@angular/material/card';
     MatFormFieldModule, MatInputModule, MatNativeDateModule,
     MatIconModule, MatButtonModule, MatIconModule,
     MatTabsModule, MatSelectModule, MatAutocompleteModule,
-    MatMenuModule, MatCardModule
+    MatMenuModule, MatCardModule,MatTableModule
   ],
   exports: [
     ReactiveFormsModule, FormsModule, CommonModule,
     MatFormFieldModule, MatInputModule, MatNativeDateModule,
     MatIconModule, MatButtonModule, 
     MatTabsModule, MatSelectModule, MatAutocompleteModule,
-    MatMenuModule, MatCardModule
+    MatMenuModule, MatCardModule,MatTableModule
   ]
 })
 export class AppMaterialModule {}

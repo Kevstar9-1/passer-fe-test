@@ -10,5 +10,15 @@
   "occupation": {
     "search": "Buscar",
     "placeholder": "Ocupaciones"
+  },
+  "country": {
+    "search": "Buscar",
+    "placeholder": "País",
+    "table": {
+      "name": "País",
+      "sugef": "Código SUGEF",
+      "risk": "Nivel de riesgo",
+      "reclassify": "Reclasificar"
+    }
   }
 }

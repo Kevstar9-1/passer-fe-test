@@ -1,9 +1,9 @@
-<!-- Barra del título -->
+<!-- título-->
 <div class="title-bar">
   <h2>{{ 'base.title' | translate }}</h2>
 </div>
 
-<!-- Barra de tabs -->
+<!--tabs -->
 <div class="tabs-bar">
   <button mat-button
     [class.active]="selectedTab === 'occupation'"
@@ -24,7 +24,7 @@
   </button>
 </div>
 
-<!-- Contenido del tab seleccionado -->
 <div class="tab-content">
   <app-occupation *ngIf="selectedTab === 'occupation'"></app-occupation>
+  <app-country *ngIf="selectedTab === 'country'"></app-country> 
 </div>
