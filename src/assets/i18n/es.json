@@ -20,5 +20,9 @@
       "risk": "Nivel de riesgo",
       "reclassify": "Reclasificar"
     }
+  },
+  "identification": {
+    "search": "Buscar",
+    "placeholder": "Identificación"
   }
 }

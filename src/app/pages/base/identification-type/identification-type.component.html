@@ -1,0 +1,13 @@
+<mat-card class="identification-filter-card">
+  <mat-card-content>
+    <h3>{{ 'identification.search' | translate }}</h3>
+
+    <mat-form-field class="identification-display" appearance="fill">
+      <mat-select [formControl]="identificationControl" placeholder="Identificación">
+        <mat-option *ngFor="let id of identifications" [value]="id">
+          {{ id }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </mat-card-content>
+</mat-card>
